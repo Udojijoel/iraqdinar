@@ -1,0 +1,218 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lobster&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@400..700&family=Delius&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>IRAQ DINAR COIN</title>
+    </head>
+    <body>
+        <header>
+            <h1>IRAQ DINAR</h1>
+            <ul class="nav-bar" id="nav-bar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#RMap">ROADMAP</a></li>
+                <li><a href="#tokenomics">TOKENOMICS</a></li>
+                <li><a href="#contact">CONTRACT</a></li>
+            </ul>
+            <div  class='bx bx-menu' id="menu-icon"></i></div>
+        </header>
+
+
+        <!--HOME-->
+        <section class="home" id="home">
+            <div class="content">
+                <h1 class="big-font">IRAQ DINAR</h1>
+                <h2 class="h2-fonts">A Revolutionary Fair Launch</h2>
+        
+                <!-- Contract Address Section -->
+                <div class="contract-box">
+                    <div class="contract-details">
+                        <span>CONTRACT</span>
+                        <span id="contract-display">C5Gu...nfpY</span>
+                        <button class="copy-btn" onclick="copyToClipboard()">
+                            <i class='bx bx-copy-alt'></i>
+                            <div id="copied-message" class="copied-message">Copied</div>
+                        </button>
+                    </div>
+                    <input type="hidden" id="contract-address" value="C5GuQ6ckEWoAt96e4GFCrZRCkcB2d9JkaJ8KYt28nfpY">
+                </div>
+        
+                <a href="https://www.dextools.io/app/en/solana/pair-explorer/PwfpEsWfeeDny9rVo5SykESsehQpjNhbvUaTAwBAwu4?t=1737205108802" class="btn" target="_blank">BUY $IQD</a>
+            </div>
+        
+            <div class="home-img">
+                <img src="/Images/transp.png">
+            </div>
+        
+            <div class="cubes">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+        </section>
+        
+        
+
+
+        <!-------ABOUT------>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="Images\transp.png">
+            </div>
+
+            <div class="about-text">
+                <h3>About Us</h3>
+                <p>
+                    Iraq Dinar Coin is a digital meme coin inspired by the legacy of the Iraqi Dinar, designed to bridge traditional currency value with the innovative power of blockchain technology.
+                </p>
+                <a href="https://t.me/+Ehgo7FXcaNQ5YmM5" target="_blank" class="btn2">Learn more</a>
+            </div>
+        </section>
+
+
+
+        <!-------ROAD MAP------>
+
+        <section class="roadmap" id="RMap">
+            <div class="roadmap-header">
+                <h2>ROADMAP</h2>
+                <p>Our journey to revolutionize the meme economy!</p>
+            </div>
+            <div class="roadmap-container">
+                <div class="milestone">
+                    <div class="icon">
+                        <i class='bx bx-buildings'></i>
+                    </div>
+                    <h3>Phase 1: <span> Foundation</span></h3>
+                    <p>Community building, fair launch, and social media buzz.</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">
+                        <i class='bx bx-globe'></i>
+                    </div>
+                    <h3>Phase 2: <span> Expansion</span></h3>
+                    <p>DEX listings, strategic partnerships, and a Litepaper launch.</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">
+                        <i class='bx bx-brain'></i>
+                    </div>
+                    <h3>Phase 3: <span> Innovation</span></h3>
+                    <p>Utility expansion, rewards programs, and multichain deployment.</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">
+                        <i class='bx bx-rocket'></i>
+                    </div>
+                    <h3>Phase 4: <span> Moonshot</span></h3>
+                    <p>NFT integration, DAO creation, and a full-scale launchpad.</p>
+                </div>
+            </div>
+        </section>
+
+
+    <!-------TOKENOMICS------>
+    <section class="tokenomics" id="tokenomics">
+        <div class="tokenomics-text">
+            <h2>TOKENOMICS</h2>
+            <p>$IRAQ DINAR is a community-led and driven project. Liquidity is 100% burnt Contract is fully renounced
+            </p>
+        </div>
+
+
+        <div class="chart-container">
+            <div class="chart-area">
+                <canvas id="myChart"></canvas>
+                <div class="chart-center-text">IQD</div>
+            </div>
+            <div class="chart-labels">
+                <ul>
+                    <li><span class="color-box" style="background-color: #FF6384;"></span> Presale: <span class="percentage">42.105263%</span></li>
+                    <li><span class="color-box" style="background-color: #36A2EB;"></span> Liquidity: <span class="percentage">25%</span></li>
+                    <li><span class="color-box" style="background-color: #FFCE56;"></span> Marketing: <span class="percentage">15%</span></li>
+                    <li><span class="color-box" style="background-color: #FF9AA2;"></span> Iraqi Donation: <span class="percentage">10%</span></li>
+                    <li><span class="color-box" style="background-color: #FFD700;"></span> Unlocked: <span class="percentage">7.894737%</span></li>
+                </ul>
+            </div>
+        </div>
+    
+
+        <div class="token-details">
+            <div class="detail-box">
+                <i class='bx bx-dollar-circle'></i>
+                <div class="box-text">
+                    <h3>Symbol</h3>
+                    <p>$IQD</p>
+                </div>
+            </div>
+    
+            <div class="detail-box">
+                <img src="Images/sol.png" alt="Network Icon" class="box-icon">
+                <div class="box-text">
+                    <h3>Network</h3>
+                    <p>Solana</p>
+                </div>
+            </div>
+    
+            <div class="detail-box">
+                <img src="Images/stackcoins-removebg-preview.png" alt="Supply Icon" class="box-icon">
+                <div class="box-text">
+                    <h3>Total Supply</h3>
+                    <p>950,000,000</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--------CONTACT-->
+    <section class="cta" id="contact">
+        <div class="cta-btns">
+            <a href="https://t.me/+Ehgo7FXcaNQ5YmM5" class="btn1" target="_blank"><i class='bx bxl-telegram'></i></a>
+            <a href="https://www.dextools.io/app/en/solana/pair-explorer/PwfpEsWfeeDny9rVo5SykESsehQpjNhbvUaTAwBAwu4?t=1737205108802" class="btn1" target="_blank"> Dextools</a>
+            <a href="https://x.com/iraqdinarcoin" class="btn1" target="_blank"> <i class='bx bxl-twitter'></i></a>
+        </div>
+        <h4>CA:  C5GuQ6ckEWoAt96e4GFCrZRCkcB2d9JkaJ8KYt28nfpY</h4>
+        
+
+    </section>
+
+    
+    <!--------FOOTER------->
+
+    <footer>
+        <div class="footer-content">
+            <p> &copy; 2025 Iraq Dinar Coin. All rights reserved.</p>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> <br>
+                    <span>Iraq Dinar Coin</span> is a decentralized cryptocurrency and does not represent or have any affiliation with the official currency of Iraq, the Iraqi Dinar (IQD). This project is independent and does not claim to replicate, replace, or substitute the real Iraq Dinar money currency. All investments in cryptocurrency carry risks, and users are advised to conduct their own research before engaging in any transactions.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
